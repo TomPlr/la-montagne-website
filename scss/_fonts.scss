@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+$titleFont: "Inter", sans-serif;
+$secondFont: "Merriweather", sans-serif;

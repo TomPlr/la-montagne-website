@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: url(../images/bg.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+h1, h3 {
+  font-family: "Inter", sans-serif;
+}
+
+#title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding-top: 270px;
+}
+
+#title h1 {
+  font-size: 6rem;
+  text-align: center;
+  width: 850px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+#title p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0%;
+  font-family: "Merriweather", sans-serif;
+}
+
+#arrow-icon img {
+  width: 90px;
+  height: 90px;
+  padding-top: 90px;
+  padding-bottom: 170px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  margin: 0px 270px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 690px;
+  align-items: center;
+}
+
+#nav-left p {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+}
+
+#nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  padding-right: 10px;
+}
+
+#nav-right img {
+  width: 25px;
+  height: 25px;
+}
+
+section {
+  margin: 0 270px;
+  background: white;
+}
+
+#date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#date p {
+  padding: 50px 70px;
+  font-size: 1.4rem;
+  font-family: "Merriweather", sans-serif;
+}
+
+#date .lines {
+  width: 510px;
+  height: 1px;
+  background: rgba(128, 128, 128, 0.4);
+}
+
+#section1-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1-content h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  width: 820px;
+  text-align: center;
+  margin: 0px;
+}
+
+#section1-content img {
+  width: 1250px;
+  height: 820px;
+}
+
+#section1-content p {
+  width: 820px;
+  padding: 40px 0px;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: "Merriweather", sans-serif;
+  text-align: center;
+  line-height: 250%;
+}
+
+#section1-content button {
+  padding: 10px;
+  width: 220px;
+  height: 60px;
+  font-size: 1.1rem;
+  background: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  font-family: "Inter", sans-serif;
+}
+
+#section1-content .button {
+  padding: 50px;
+}
+
+#other-stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#other-stories .stories {
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
+  width: 50%;
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#other-stories .stories img {
+  height: 380px;
+  width: 620px;
+}
+
+#other-stories .stories p {
+  font-family: "Merriweather", sans-serif;
+  padding-top: 30px;
+  width: 620px;
+  line-height: 230%;
+}
+
+#other-stories .stories .dates {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#other-stories .stories h3 {
+  width: 280px;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 0px;
+}
+
+#other-stories .stories .button {
+  padding: 40px 0px;
+}
+
+#other-stories .stories button {
+  padding: 10px;
+  width: 220px;
+  height: 60px;
+  font-size: 1.1rem;
+  background: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  font-family: "Inter", sans-serif;
+}
+
+#separation-line {
+  width: 2px;
+  height: 900px;
+  background: rgba(128, 128, 128, 0.4);
+}
+
+footer {
+  margin: 0 270px;
+  background: white;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#message-box {
+  width: 50%;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+#contact .contact-box {
+  border: 1px solid grey;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  height: 100px;
+}
+
+#contact .contact-box div {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+}
+
+#contact .contact-box p {
+  margin: auto 0;
+}
+
+#contact .contact-box #social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto 0;
+  width: 300px;
+}
+
+#contact .contact-box #social-medias div {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+#contact .contact-box #social-medias div img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin: auto;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+/*# sourceMappingURL=main.css.map */
