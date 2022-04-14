@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color: $mainColor;
-  padding-top: 270px;
+  padding-top: 10%;
 
   h1 {
     font-size: 6rem;
@@ -34,7 +34,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin: 0px 270px;
+  margin: 0px 12%;
   height: 60px;
   background: rgba($color: white, $alpha: 0.2);
 }
@@ -43,15 +43,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 690px;
+  width: 50%;
   align-items: center;
 
   p {
     margin: 0;
     color: $mainColor;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    font-family: $titleFont;
+    font-family: $mainFont;
     letter-spacing: 2px;
   }
 }
@@ -60,7 +60,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 35%;
   padding-right: 10px;
 
   img {

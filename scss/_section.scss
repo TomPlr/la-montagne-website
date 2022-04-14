@@ -1,5 +1,5 @@
 section {
-  margin: 0 270px;
+  margin: 0 12%;
   background: white;
 }
 
@@ -15,7 +15,7 @@ section {
   }
 
   .lines {
-    width: 510px;
+    width: 30%;
     height: 1px;
     background: rgba($color: grey, $alpha: 0.4);
   }
@@ -35,8 +35,8 @@ section {
   }
 
   img {
-    width: 1250px;
-    height: 820px;
+    width: 80%;
+    height: 80%;
   }
 
   p {
@@ -51,7 +51,7 @@ section {
 
   button {
     @include button;
-    font-family: $titleFont;
+    font-family: $mainFont;
   }
 
   .button {
@@ -74,14 +74,14 @@ section {
     align-items: center;
 
     img {
-      height: 380px;
-      width: 620px;
+      height: 30%;
+      width: 80%;
     }
 
     p {
       font-family: $secondFont;
       padding-top: 30px;
-      width: 620px;
+      width: 80%;
       line-height: 230%;
     }
     .dates {
@@ -102,7 +102,7 @@ section {
     }
     button{
         @include button;
-        font-family: $titleFont;
+        font-family: $mainFont;
     }
   }
 }
