@@ -1,62 +1,82 @@
 footer {
-  margin: 0 12%;
+  margin: 50px 12% 0px 12%;
   background: white;
-  margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  height: 800px;
+  margin-bottom: 120px;
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 #message-box {
   width: 50%;
-}
-form {
   display: grid;
+
+  label {
+    margin: auto 0;
+    color: rgba($color: grey, $alpha: 1);
+    text-transform: uppercase;
+    font-family: $mainFont;
+  }
+
+  input{
+    border-color: rgba($color: grey, $alpha: 0.2);
+    border-radius: 4px;
+  }
+
+  form {
+    padding: 40px 8%;
+    display: grid;
+    grid-template-rows: 8% 8% 8% 8% 8% 40% 25%;
+  }
+
+  div{
+    margin: auto 0;
+
+  }
+
+  #button-submit{
+    @include button;
+    border-color: grey;
+    color: grey;
+    border-radius: 0;
+    
+  }
 }
 
 #contact {
-  display: flex;
-  flex-direction: column;
   width: 50%;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+}
 
-  .contact-box {
-    border: 1px solid grey;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    height: 100px;
+.contact-label {
+  text-align: center;
+  margin: auto;
+  color: rgba($color: grey, $alpha: 1);
+  text-transform: uppercase;
+  font-family: $mainFont;
+}
 
-    div {
-      align-content: center;
-      margin: auto;
-    }
+.contact-content {
+  color: rgba($color: grey, $alpha: 0.7);
+  font-family: $secondFont;
+  padding-top: 90px;
+  max-width: 280px;
+}
 
-    p {
-      margin: auto 0;
-      width: 70%;
-      color: rgba($color: grey, $alpha: 0.7);
-      font-family: $secondFont;
-    }
+.contact-box {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border-bottom: 1px solid rgba($color: grey, $alpha: 0.2);
+  border-left: 1px solid rgba($color: grey, $alpha: 0.2);
 
-    #social-medias {
-      display: flex;
-      justify-content: space-around;
-      margin: auto 0;
-      width: 50%;
-
-      div {
-        position: relative;
-        border: 1px solid black;
-        border-radius: 50px;
-        height: 20%;
-        width: 20%;
-
-        img {
-          height: 30px;
-          width: 30px;
-          position: absolute;
-          margin: auto;
-          transform: translate(-50% -50%);
-        }
-      }
-    }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
   }
 }

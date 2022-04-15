@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color: $mainColor;
-  padding-top: 10%;
+  padding-top: 280px;
 
   h1 {
     font-size: 6rem;
@@ -19,6 +19,10 @@
     margin: 0%;
     font-family: $secondFont;
   }
+}
+
+#date{
+  padding: 30px 0px;
 }
 
 #arrow-icon {
@@ -60,8 +64,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
-  padding-right: 10px;
+  width: 22%;
+  padding-right: 20px;
 
   img {
     width: 25px;
