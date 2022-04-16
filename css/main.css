@@ -17,7 +17,8 @@ body {
   background-size: cover;
 }
 
-h1, h3 {
+h1,
+h3 {
   font-family: "Inter", sans-serif;
 }
 
@@ -89,10 +90,10 @@ nav {
   align-items: center;
 }
 
-#nav-left p {
+#nav-left li {
+  list-style: none;
   margin: 0;
   color: white;
-  font-size: 0.8rem;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;
@@ -113,8 +114,8 @@ nav {
 }
 
 #nav-right img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 section {
@@ -143,7 +144,7 @@ section {
 #date .lines {
   width: 30%;
   height: 1px;
-  background: rgba(128, 128, 128, 0.4);
+  background: rgba(128, 128, 128, 0.2);
 }
 
 #section1-content {
@@ -249,6 +250,7 @@ section {
   text-align: center;
   text-transform: uppercase;
   padding: 30px 0px;
+  line-height: 150%;
 }
 
 #other-stories .stories .button {
@@ -311,8 +313,8 @@ footer img {
   padding: 40px 8%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 8% 8% 8% 8% 8% 40% 25%;
-      grid-template-rows: 8% 8% 8% 8% 8% 40% 25%;
+  -ms-grid-rows: 8% 8% 8% 8% 8% 40% 20%;
+      grid-template-rows: 8% 8% 8% 8% 8% 40% 20%;
 }
 
 #message-box div {
@@ -343,8 +345,7 @@ footer img {
 }
 
 .contact-label {
-  text-align: center;
-  margin: auto;
+  margin: auto 40px;
   color: gray;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;

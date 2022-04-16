@@ -22,7 +22,7 @@ footer {
     font-family: $mainFont;
   }
 
-  input{
+  input {
     border-color: rgba($color: grey, $alpha: 0.2);
     border-radius: 4px;
   }
@@ -30,20 +30,18 @@ footer {
   form {
     padding: 40px 8%;
     display: grid;
-    grid-template-rows: 8% 8% 8% 8% 8% 40% 25%;
+    grid-template-rows: 8% 8% 8% 8% 8% 40% 20%;
   }
 
-  div{
+  div {
     margin: auto 0;
-
   }
 
-  #button-submit{
+  #button-submit {
     @include button;
     border-color: grey;
     color: grey;
     border-radius: 0;
-    
   }
 }
 
@@ -54,8 +52,7 @@ footer {
 }
 
 .contact-label {
-  text-align: center;
-  margin: auto;
+  margin: auto 40px;
   color: rgba($color: grey, $alpha: 1);
   text-transform: uppercase;
   font-family: $mainFont;

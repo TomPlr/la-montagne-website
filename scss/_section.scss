@@ -3,6 +3,8 @@ section {
   background: white;
 }
 
+// ---------------------- MAIN PART ----------------------------
+
 #date {
   display: flex;
   justify-content: center;
@@ -17,7 +19,7 @@ section {
   .lines {
     width: 30%;
     height: 1px;
-    background: rgba($color: grey, $alpha: 0.4);
+    background: rgba($color: grey, $alpha: 0.2);
   }
 }
 
@@ -59,7 +61,7 @@ section {
   }
 }
 
-// ---------------------- OTHERS STORIES ----------------------------
+// ---------------------- SECOND PART ----------------------------
 
 #other-stories {
   display: flex;
@@ -97,13 +99,14 @@ section {
       text-align: center;
       text-transform: uppercase;
       padding: 30px 0px;
+      line-height: 150%;
     }
-    .button{
-        padding: 40px 0px
+    .button {
+      padding: 40px 0px;
     }
-    button{
-        @include button;
-        font-family: $mainFont;
+    button {
+      @include button;
+      font-family: $mainFont;
     }
   }
 }
