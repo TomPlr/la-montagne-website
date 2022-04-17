@@ -22,3 +22,8 @@ h3 {
   border: 3px solid black;
   font-family: $mainFont;
 }
+
+@mixin hoverButton {
+  background: rgba($color: grey, $alpha: 0.1);
+  cursor: pointer;
+}

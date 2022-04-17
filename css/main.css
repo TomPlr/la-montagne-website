@@ -22,7 +22,8 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
-#title {
+header {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,25 +31,42 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#title {
+  height: 72vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  padding-top: 280px;
 }
 
 #title h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  letter-spacing: 7px;
   text-align: center;
   width: 850px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 #title p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-style: italic;
-  margin: 0%;
+  margin-bottom: 55px;
   font-family: "Merriweather", sans-serif;
 }
 
@@ -59,8 +77,6 @@ h3 {
 #arrow-icon img {
   width: 90px;
   height: 90px;
-  padding-top: 90px;
-  padding-bottom: 170px;
 }
 
 nav {
@@ -70,30 +86,46 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
   margin: 0px 12%;
-  height: 60px;
+  height: 10vh;
   background: rgba(255, 255, 255, 0.2);
 }
 
 #nav-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  width: 50%;
+}
+
+#nav-left li:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#nav-left :hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+a {
+  text-decoration: none;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
-  align-items: center;
+  height: 100%;
 }
 
-#nav-left li {
+li {
   list-style: none;
-  margin: 0;
-  color: white;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;
@@ -113,9 +145,23 @@ nav {
   padding-right: 20px;
 }
 
+#nav-right :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
 #nav-right img {
   width: 30px;
   height: 30px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#nav-right img li {
+  list-style: none;
 }
 
 section {
@@ -163,7 +209,7 @@ section {
 #section1-content h1 {
   text-transform: uppercase;
   font-size: 5rem;
-  width: 820px;
+  width: 900px;
   text-align: center;
   margin: 0px;
 }
@@ -198,6 +244,11 @@ section {
 
 #section1-content .button {
   padding: 80px 0px 110px 0px;
+}
+
+#section1-content .button :hover {
+  background: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
 }
 
 #other-stories {
@@ -244,7 +295,7 @@ section {
 }
 
 #other-stories .stories h3 {
-  width: 280px;
+  width: 300px;
   font-size: 1.6rem;
   letter-spacing: 3px;
   text-align: center;
@@ -255,6 +306,11 @@ section {
 
 #other-stories .stories .button {
   padding: 40px 0px;
+}
+
+#other-stories .stories .button :hover {
+  background: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
 }
 
 #other-stories .stories button {
@@ -287,8 +343,18 @@ footer {
 }
 
 footer img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
+  margin: 0;
+}
+
+footer .circle {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 50px;
+  padding: 15px;
+  margin: auto;
+  height: 25px;
+  width: 25px;
 }
 
 #message-box {
@@ -305,8 +371,27 @@ footer img {
 }
 
 #message-box input {
-  border-color: rgba(128, 128, 128, 0.2);
+  border-color: rgba(128, 128, 128, 0.2) !important;
   border-radius: 4px;
+}
+
+#message-box .button-form {
+  padding: 10px;
+  width: 220px;
+  height: 60px;
+  font-size: 1.1rem;
+  background: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  font-family: "Inter", sans-serif;
+  margin: auto 0;
+  color: rgba(128, 128, 128, 0.5);
+}
+
+#message-box .button-form:hover {
+  background: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
 }
 
 #message-box form {
@@ -318,22 +403,7 @@ footer img {
 }
 
 #message-box div {
-  margin: auto 0;
-}
-
-#message-box #button-submit {
-  padding: 10px;
-  width: 220px;
-  height: 60px;
-  font-size: 1.1rem;
-  background: white;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  border: 3px solid black;
-  font-family: "Inter", sans-serif;
-  border-color: grey;
-  color: grey;
-  border-radius: 0;
+  padding: auto 0;
 }
 
 #contact {
@@ -354,8 +424,8 @@ footer img {
 .contact-content {
   color: rgba(128, 128, 128, 0.7);
   font-family: "Merriweather", sans-serif;
-  padding-top: 90px;
-  max-width: 280px;
+  margin: auto 0;
+  max-width: 350px;
 }
 
 .contact-box {
@@ -367,13 +437,13 @@ footer img {
   border-left: 1px solid rgba(128, 128, 128, 0.2);
 }
 
-.contact-box > div {
+.contact-box div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 200px;
+  max-width: 65%;
 }
 /*# sourceMappingURL=main.css.map */
