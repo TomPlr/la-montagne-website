@@ -18,14 +18,14 @@
           repudiandae praesentium quos nihil, eius amet?
         </p>
         <div id="arrow-icon">
-          <img src="./images/download-circular-button.png" alt="arrow-down" />
+          <img src="./images/down-arrow.png" alt="arrow-down" />
         </div>
       </div>
       <nav>
         <ul id="nav-left">
-          <li><a href="">This is massively</a></li>
+          <li><a id="first-menu" href="">This is massively</a></li>
           <li><a href="">Generic page</a></li>
-          <li><a href="">Elements</a></li>
+          <li><a href="">Elements reference</a></li>
         </ul>
 
         <ul id="nav-right">
@@ -102,13 +102,18 @@
       <div id="message-box">
         <form action="">
           <label for="name">Name</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" autocomplete="none" />
           <label for="email">Email</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" autocomplete="none" />
           <label for="message">Message</label>
-          <input type="text" id="message" />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            style="resize: none"
+          ></textarea>
           <input class="button-form" type="submit" value="Send message" />
-          
         </form>
       </div>
       <div id="contact">

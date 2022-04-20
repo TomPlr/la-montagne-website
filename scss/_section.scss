@@ -1,6 +1,6 @@
 section {
   margin: 0 12%;
-  background: white;
+  background: $color1;
 }
 
 // ---------------------- MAIN PART ----------------------------
@@ -72,7 +72,7 @@ section {
   justify-content: center;
 
   .stories {
-    border-top: 1px solid rgba($color: grey, $alpha: 0.2);
+    border-top: 1px solid $border1;
     width: 50%;
     height: 950px;
     display: flex;
@@ -122,5 +122,5 @@ section {
 #separation-line {
   width: 2px;
   height: 950px;
-  background: rgba($color: grey, $alpha: 0.2);
+  background: $border1;
 }

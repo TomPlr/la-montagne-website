@@ -58,7 +58,7 @@ header {
   font-size: 5rem;
   letter-spacing: 7px;
   text-align: center;
-  width: 850px;
+  width: 800px;
   text-transform: uppercase;
   margin-bottom: 45px;
 }
@@ -66,7 +66,7 @@ header {
 #title p {
   font-size: 1.3rem;
   font-style: italic;
-  margin-bottom: 55px;
+  margin-bottom: 75px;
   font-family: "Merriweather", sans-serif;
 }
 
@@ -75,8 +75,11 @@ header {
 }
 
 #arrow-icon img {
-  width: 90px;
-  height: 90px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 100px;
+  padding: 25px;
 }
 
 nav {
@@ -91,22 +94,27 @@ nav {
   background: rgba(255, 255, 255, 0.2);
 }
 
-#nav-left {
+nav #nav-left {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
-  width: 50%;
+  width: 55%;
 }
 
-#nav-left li:nth-child(1) {
-  background-color: rgba(255, 255, 255, 0.6);
+nav #nav-left:hover a:not(:hover) {
+  background: none;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-#nav-left :hover {
+#first-menu {
+  background-color: white;
   color: black;
-  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 a {
@@ -122,6 +130,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
 }
 
 li {
@@ -152,8 +165,9 @@ li {
 }
 
 #nav-right img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -239,6 +253,8 @@ section {
   text-transform: uppercase;
   border: 3px solid black;
   font-family: "Inter", sans-serif;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   font-family: "Inter", sans-serif;
 }
 
@@ -323,6 +339,8 @@ section {
   text-transform: uppercase;
   border: 3px solid black;
   font-family: "Inter", sans-serif;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   font-family: "Inter", sans-serif;
 }
 
@@ -346,15 +364,30 @@ footer img {
   height: 25px;
   width: 25px;
   margin: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+footer img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 
 footer .circle {
-  border: 1px solid rgba(128, 128, 128, 0.2);
+  border: 1px solid grey;
   border-radius: 50px;
   padding: 15px;
   margin: auto;
   height: 25px;
   width: 25px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+footer .circle:hover {
+  background: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
 }
 
 #message-box {
@@ -365,14 +398,23 @@ footer .circle {
 
 #message-box label {
   margin: auto 0;
-  color: gray;
+  color: grey;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
 }
 
 #message-box input {
-  border-color: rgba(128, 128, 128, 0.2) !important;
+  border-color: grey !important;
   border-radius: 4px;
+  text-align: start;
+  color: grey;
+  font-size: 1.5rem;
+}
+
+#message-box #message {
+  padding: 5%;
+  color: grey;
+  font-size: 1.5rem;
 }
 
 #message-box .button-form {
@@ -385,8 +427,11 @@ footer .circle {
   text-transform: uppercase;
   border: 3px solid black;
   font-family: "Inter", sans-serif;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   margin: auto 0;
-  color: rgba(128, 128, 128, 0.5);
+  text-align: center;
+  color: grey;
 }
 
 #message-box .button-form:hover {
@@ -416,7 +461,7 @@ footer .circle {
 
 .contact-label {
   margin: auto 40px;
-  color: gray;
+  color: grey;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
 }

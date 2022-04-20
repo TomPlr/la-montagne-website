@@ -1,1 +1,18 @@
-$mainColor: white;
+$color1: white;
+
+$color2: black;
+
+$color3: grey;
+$color3-1: rgba(
+  $color: grey,
+  $alpha: 0.7,
+);
+
+$border1: rgba(
+  $color: grey,
+  $alpha: 0.2,
+);
+$border2: rgba(
+  $color: grey,
+  $alpha: 0.5,
+);

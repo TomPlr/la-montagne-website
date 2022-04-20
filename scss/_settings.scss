@@ -21,9 +21,15 @@ h3 {
   text-transform: uppercase;
   border: 3px solid black;
   font-family: $mainFont;
+  transition: 0.2s ease-in-out;
 }
 
 @mixin hoverButton {
   background: rgba($color: grey, $alpha: 0.1);
   cursor: pointer;
+}
+
+@mixin inputStyle {
+  color: $color3;
+  font-size: 1.5rem;
 }
