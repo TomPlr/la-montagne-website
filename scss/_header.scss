@@ -70,6 +70,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     width: 55%;
+    text-align: center;
 
     &:hover a:not(:hover) {
       background: none;
