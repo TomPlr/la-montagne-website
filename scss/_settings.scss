@@ -5,7 +5,7 @@ body {
   background: url(../images/bg.jpg) fixed no-repeat center;
   background-size: cover;
 
-  &::after{
+  &::before{
     content: "";
     position: absolute;
     height: 100%;
