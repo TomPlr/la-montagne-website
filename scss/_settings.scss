@@ -4,6 +4,27 @@
 body {
   background: url(../images/bg.jpg) fixed no-repeat center;
   background-size: cover;
+
+  &::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: $color2;
+    animation:  animBefore 1.5s ease forwards;
+    animation-delay: 0.2s;
+
+    @keyframes animBefore {
+      to{
+        opacity: 0;
+      }
+      
+    }
+
+  }
 }
 
 h1,

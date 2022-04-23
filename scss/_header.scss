@@ -3,7 +3,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative; 
 }
+
 
 #title {
   height: 72vh;
@@ -12,6 +14,18 @@ header {
   justify-content: flex-end;
   align-items: center;
   color: $color1;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: headerAnim 1.5s forwards;
+
+  @keyframes headerAnim {
+
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+    
 
   h1 {
     font-size: 5rem;
