@@ -16,7 +16,7 @@ header {
   color: $color1;
   transform: translateY(40px);
   opacity: 0;
-  animation: headerAnim 1.5s forwards;
+  animation: headerAnim 2s forwards;
 
   @keyframes headerAnim {
 
@@ -49,12 +49,17 @@ header {
 }
 
 #arrow-icon {
+  border: 1px solid $color1;
+  border-radius: 200px;
+  
+  
+
   img {
     width: 30px;
     height: 30px;
-    border: 3px solid $color1;
-    border-radius: 100px;
-    padding: 25px;
+    margin: 30px;
+    
+    
   }
 }
 
